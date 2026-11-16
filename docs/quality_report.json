@@ -1,0 +1,1306 @@
+{
+  "rows": 5183,
+  "violations": [
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03363464",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02954692",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03419624",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03899402",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07513259",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04151849",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05284344",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03921242",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07325435",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05214573",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05161793",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07723820",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05140694",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06665919",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02518945",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04862858",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05938712",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06030739",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06528405",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07628556",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05857085",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03678727",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06271200",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02635386",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07465926",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06030726",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02324842",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07360457",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03361098",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06446531",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07309094",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02787551",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06821919",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05037058",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05781334",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05313529",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05390892",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04184947",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04287387",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03878706",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07391267",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02846233",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06600490",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07770737",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07767552",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03007329",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03807440",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04196231",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07566299",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04135287",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06740435",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07630454",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06444711",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05734989",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04128995",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06944353",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07708610",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07073053",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07539584",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07883564",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05330221",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05764057",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07811427",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03573102",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03365063",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06665919",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04960514",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05495516",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03932721",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07854990",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02378805",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05335629",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05914857",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06223750",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06451458",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05806645",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07785128",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07907965",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04847531",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05342545",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03270358",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04761874",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06622304",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06975111",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05330221",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03989011",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05037695",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07390331",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07087431",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03899402",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02823938",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01985360",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02539810",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02215174",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02380911",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07635498",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07027969",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00443794",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03475030",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05347823",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02212912",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00150943",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07914283",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03135002",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01364675",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03734887",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00668408",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03616418",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06259227",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05295368",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05978388",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04894877",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07558902",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03521700",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07889531",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07084051",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01402843",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07301489",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00984750",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07364175",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01563731",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05743465",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00004266",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06515652",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05373004",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01471522",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06129318",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00658515",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03672890",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07698223",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01871207",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01173666",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03089333",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06223750",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01508468",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03724110",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03127631",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07773272",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01061450",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00704548",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02144922",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00256750",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01738542",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00805311",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01665235",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06650579",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07785128",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04054232",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07907965",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06065098",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01002339",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03616769",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04838457",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01023373",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05240443",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00006071",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05816733",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04882358",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06350487",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07685938",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04193306",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03363464",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04613193",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01508663",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02008110",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02123056",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02721342",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07527390",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00231803",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07047547",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06797115",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03314012",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03122834",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07641257",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01841346",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03492580",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT02653482",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03560323",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06251453",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06137430",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04984616",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04191330",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04199663",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05916287",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05976893",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03526367",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05764811",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05741658",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06058585",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05330221",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05367063",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04680338",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04054648",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03413215",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06578078",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07926958",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01561118",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03627039",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05732077",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03989011",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT07892664",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05037695",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03226457",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT03277365",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01969149",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05640180",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT00791648",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05058859",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT01427218",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT04978649",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT06637618",
+      "detail": "duplicate nct_id in payload"
+    },
+    {
+      "rule": "nct_id_duplicate",
+      "critical": false,
+      "nct_id": "NCT05998525",
+      "detail": "duplicate nct_id in payload"
+    }
+  ],
+  "violations_by_rule": {
+    "nct_id_duplicate": 212
+  },
+  "missingness": {
+    "nct_id": 0.0,
+    "title": 0.0,
+    "status": 0.0,
+    "phases": 0.2265,
+    "phase_category": 0.2265,
+    "enrollment_count": 0.0068,
+    "enrollment_type": 0.0199,
+    "conditions": 0.0,
+    "interventions": 0.0833,
+    "intervention_types": 0.0832,
+    "sponsor_name": 0.0,
+    "sponsor_class": 0.0,
+    "start_date": 0.0027,
+    "primary_completion_date": 0.026,
+    "completion_date": 0.0164,
+    "allocation": 0.229,
+    "intervention_model": 0.23,
+    "masking": 0.2302,
+    "primary_purpose": 0.2327,
+    "n_primary_outcomes": 0.0137,
+    "primary_outcome_first": 0.0137,
+    "has_results": 0.0
+  },
+  "critical": 0,
+  "ok": true
+}

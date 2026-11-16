@@ -1,0 +1,49 @@
+# Pipeline configuration. Secrets are none for this project - ClinicalTrials.gov
+# and our analyses are free and open.
+api:
+  base_url: "https://clinicaltrials.gov/api/v2"
+  page_size: 1000
+  timeout: 60
+  rate_limit_per_sec: 3.0
+  max_retries: 4
+
+ingest:
+  # Domain queries for cardiometabolic trials.
+  queries:
+    - "SGLT2 inhibitor"
+    - "GLP-1 receptor agonist"
+    - "statin"
+    - "antihypertensive"
+    - "heart failure"
+  max_studies_per_query: 1200
+  # Fields to request from the API (keeps raw payloads small).
+  fields:
+    - NCTId
+    - BriefTitle
+    - OverallStatus
+    - Phase
+    - EnrollmentCount
+    - EnrollmentType
+    - Condition
+    - InterventionName
+    - InterventionType
+    - LeadSponsorName
+    - LeadSponsorClass
+    - StartDate
+    - PrimaryCompletionDate
+    - CompletionDate
+    - DesignAllocation
+    - DesignInterventionModel
+    - DesignMasking
+    - DesignPrimaryPurpose
+    - PrimaryOutcomeMeasure
+    - HasResults
+
+paths:
+  raw_dir: "data/raw"
+  db_path: "data/ctgov.duckdb"
+  reports_dir: "reports"
+
+quality:
+  # Critical rules make the pipeline exit non-zero in --strict mode.
+  strict: false
