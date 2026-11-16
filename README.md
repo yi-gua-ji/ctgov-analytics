@@ -55,8 +55,9 @@ Outputs after a run:
 
 - **Idempotent loads**: `INSERT OR REPLACE` keyed by `nct_id`; re-running a
   query does not duplicate rows (tested).
-- **Incremental by query**: each run overwrites raw JSONL for its queries and
-  upserts the warehouse; `etl_runs` keeps a run log with counts and status.
+- **Incremental by query**: each run writes a timestamped bronze snapshot per
+  query under `data/raw/` and upserts the warehouse; `etl_runs` keeps a run log
+  with counts and status.
 - **Quality gates**: `nct_id` format and duplicates are critical (strict mode
   exits 2); enum, date-order and enrollment rules are warnings and are
   counted in the quality report.
@@ -67,10 +68,16 @@ Outputs after a run:
 
 `reports/insights.md` covers:
 
-1. Trials per start year (with a Poisson GLM trend: IRR per year, 95% CI).
+1. Trials per start year (with a Poisson GLM trend: IRR per year, 95% CI,
+   computed on completed registry years only — pre-2000 retrospective
+   registrations and future-dated planned trials are excluded, and a
+   window-sensitivity table shows the estimate is not an artefact of the
+   window choice).
 2. Phase distribution and enrollment by phase (Kruskal-Wallis).
-3. Completion and stopping rates by sponsor class (chi-square screening test).
-4. SGLT2-related trial trend (Poisson IRR).
+3. Completion and stopping rates by sponsor class (chi-square screening test;
+   Wilson 95% intervals per class).
+4. SGLT2-related trial trend (Poisson IRR; the class flag matches the SGLT2
+   acronym and every gliflozin agent name, so canagliflozin-only trials count).
 5. Top conditions and a data-quality table (missingness, results availability).
 
 Every table is generated from the SQL marts, and the method notes state the
@@ -90,9 +97,10 @@ Snapshot from the committed run (`docs/insights.md`, 2026-11-16): five queries,
 | Stopped share (terminated/withdrawn/suspended) | 7.5% |
 | Median enrollment | 114 participants |
 | Trials with posted results | 14.7% |
-| SGLT2-related trials | 516 (10.4%) |
-| Annual trial-count trend (Poisson) | IRR 1.083 per year (95% CI 1.080-1.086, p<0.001) |
-| SGLT2 annual trend (Poisson) | IRR 1.148 per year (95% CI 1.133-1.163, p<0.001) |
+| SGLT2-related trials | 589 (11.8%) |
+| Annual trial-count trend (Poisson, 2000-2025) | IRR 1.092 per year (95% CI 1.087-1.097, p<0.001) |
+| Trend window sensitivity | IRR 1.0755 (2005-2025), 1.0698 (2010-2025), 1.0786 (2015-2025) |
+| SGLT2 annual trend (Poisson, 2000-2025) | IRR 1.236 per year (95% CI 1.212-1.260, p<0.001) |
 | Completion differs by sponsor class | chi2 = 192.4, p<0.001 (Industry 68.1% vs Other 44.5%) |
 | Enrollment differs by phase | Kruskal H = 366.3, p<0.001 (Phase1 ~42, Phase2 ~72, Phase3 ~264 medians) |
 | Missingness | enrollment 0.7%, start date 0.3%, phase 22.5% |

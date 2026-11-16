@@ -31,9 +31,13 @@ SELECT
     CASE WHEN status IN (
         'TERMINATED', 'WITHDRAWN', 'SUSPENDED'
     ) THEN 1 ELSE 0 END AS is_stopped,
+    -- SGLT2 coverage: the class acronym plus every approved agent name, so
+    -- trials naming only canagliflozin / ertugliflozin / sotagliflozin count.
     CASE WHEN LOWER(conditions) LIKE '%sglt2%' OR LOWER(interventions) LIKE '%sglt2%'
-         OR LOWER(conditions) LIKE '%dapagliflozin%' OR LOWER(interventions) LIKE '%dapagliflozin%'
-         OR LOWER(interventions) LIKE '%empagliflozin%'
+         OR LOWER(conditions) LIKE '%gliflozin%' OR LOWER(interventions) LIKE '%gliflozin%'
+         OR LOWER(interventions) LIKE '%dapagliflozin%' OR LOWER(interventions) LIKE '%empagliflozin%'
+         OR LOWER(interventions) LIKE '%canagliflozin%' OR LOWER(interventions) LIKE '%ertugliflozin%'
+         OR LOWER(interventions) LIKE '%sotagliflozin%'
     THEN 1 ELSE 0 END AS is_sglt2
 FROM stg_studies;
 

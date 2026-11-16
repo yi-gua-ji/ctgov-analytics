@@ -9,13 +9,12 @@ import sys
 from pathlib import Path
 
 import duckdb
-import pandas as pd
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from cta.analytics import metrics  # noqa: E402
-from cta.config import load_config  # noqa: E402
+from cta.analytics import metrics
+from cta.config import load_config
 
 st.set_page_config(page_title="Cardiometabolic trials", layout="wide")
 st.title("ClinicalTrials.gov cardiometabolic trials")

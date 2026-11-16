@@ -3,11 +3,12 @@
 from __future__ import annotations
 
 import math
+from datetime import UTC, datetime
 
 import numpy as np
 import pandas as pd
-from scipy import stats
 import statsmodels.api as sm
+from scipy import stats
 
 Z95 = 1.959963984540054
 
@@ -68,10 +69,27 @@ def kruskal_enrollment_by_phase(df: pd.DataFrame, min_n: int = 10) -> dict:
     }
 
 
-def poisson_trend_by_year(df: pd.DataFrame, count_column: str = "n_trials") -> dict:
-    """Poisson GLM of a yearly count with an incidence rate ratio and 95% CI."""
+def poisson_trend_by_year(
+    df: pd.DataFrame,
+    count_column: str = "n_trials",
+    min_year: int = 2000,
+    max_year: int | None = None,
+) -> dict:
+    """Poisson GLM of a yearly count with an incidence rate ratio and 95% CI.
+
+    The window defaults to completed registry years: pre-2000 rows are
+    retrospective registrations and post-(current year - 1) rows are planned
+    trials that have not happened yet, so including either distorts a trend
+    over observed counts. Pass explicit bounds to test sensitivity.
+    """
+    if max_year is None:
+        max_year = datetime.now(UTC).year - 1
     data = df.dropna(subset=["start_year", count_column])
-    data = data[(data["start_year"] >= 1990) & (data[count_column] >= 0)]
+    data = data[
+        (data["start_year"] >= min_year)
+        & (data["start_year"] <= max_year)
+        & (data[count_column] >= 0)
+    ]
     if len(data) < 5:
         return {"test": "poisson", "error": "not enough years", "p_value": None}
     x = sm.add_constant(data["start_year"].astype(float).to_numpy())
@@ -82,9 +100,10 @@ def poisson_trend_by_year(df: pd.DataFrame, count_column: str = "n_trials") -> d
     ci_low, ci_high = results.conf_int()[1]
     return {
         "test": "Poisson GLM trend (annual count)",
+        "window": f"{min_year}-{max_year}",
         "irr_per_year": round(float(np.exp(coef)), 4),
         "ci_low": round(float(np.exp(ci_low)), 4),
         "ci_high": round(float(np.exp(ci_high)), 4),
         "p_value": float(results.pvalues[1]),
-        "n_years": int(len(data)),
+        "n_years": len(data),
     }

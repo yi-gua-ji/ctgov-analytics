@@ -47,6 +47,21 @@ def test_completion_by_sponsor(sample_studies):
     assert industry["completion_rate"] == 1.0
 
 
+def test_is_sglt2_matches_gliflozin_agents():
+    """A trial that names only canagliflozin must count as SGLT2."""
+    study = {
+        "protocolSection": {
+            "identificationModule": {"nctId": "NCT00000003", "briefTitle": "Canagliflozin trial"},
+            "statusModule": {"overallStatus": "COMPLETED"},
+            "armsInterventionsModule": {
+                "interventions": [{"type": "DRUG", "name": "Canagliflozin 100 mg"}]
+            },
+        }
+    }
+    con = _warehouse([study])
+    assert metrics.overview(con)["n_sglt2"] == 1
+
+
 def test_upsert_replaces_values(sample_studies):
     con = _warehouse(sample_studies)
     rows = extract_rows(sample_studies)

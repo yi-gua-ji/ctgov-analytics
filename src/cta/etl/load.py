@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import uuid
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -79,10 +79,10 @@ def record_run(
 ) -> str:
     """Record one pipeline run in etl_runs."""
     run_id = run_id or uuid.uuid4().hex[:12]
-    started_at = started_at or datetime.now(timezone.utc)
+    started_at = started_at or datetime.now(UTC)
     con.execute(
         "INSERT OR REPLACE INTO etl_runs VALUES (?, ?, ?, ?, ?, ?, ?)",
-        [run_id, started_at, datetime.now(timezone.utc), n_fetched, n_upserted, "; ".join(queries), status],
+        [run_id, started_at, datetime.now(UTC), n_fetched, n_upserted, "; ".join(queries), status],
     )
     return run_id
 def execute_script(con: duckdb.DuckDBPyConnection, sql: str) -> None:

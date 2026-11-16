@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import duckdb
@@ -58,8 +58,18 @@ def generate_insights(con: duckdb.DuckDBPyConnection, reports_dir) -> Path:
     kruskal = stats.kruskal_enrollment_by_phase(raw_phase)
     trend_all = stats.poisson_trend_by_year(by_year)
     trend_sglt2 = stats.poisson_trend_by_year(sglt2.rename(columns={"n_sglt2": "n_trials"})[["start_year", "n_trials"]])
+    # Window sensitivity: the headline trend must not be an artefact of where
+    # the observation window starts or ends.
+    trend_windows = [
+        (min_year, stats.poisson_trend_by_year(by_year, min_year=min_year))
+        for min_year in (2000, 2005, 2010, 2015)
+    ]
+    sponsor_display = sponsors.copy()
+    sponsor_display["ci_low"], sponsor_display["ci_high"] = zip(
+        *[stats.wilson_ci(int(n), int(total)) for n, total in zip(sponsor_display["n_completed"], sponsor_display["n_trials"], strict=False)], strict=False
+    )
 
-    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M") + " UTC"
+    generated = datetime.now(UTC).strftime("%Y-%m-%d %H:%M") + " UTC"
 
     n_trials = overview["n_trials"]
     lines: list = []
@@ -83,7 +93,21 @@ def generate_insights(con: duckdb.DuckDBPyConnection, reports_dir) -> Path:
     irr = trend_all.get("irr_per_year")
     lo = trend_all.get("ci_low")
     hi = trend_all.get("ci_high")
-    lines.append("- Poisson trend of annual counts: IRR = " + str(irr) + " per year (95% CI " + str(lo) + "-" + str(hi) + ", p=" + _fmt_p(trend_all.get("p_value")) + ")")
+    lines.append("- Poisson trend of annual counts: IRR = " + str(irr) + " per year (95% CI " + str(lo) + "-" + str(hi) + ", p=" + _fmt_p(trend_all.get("p_value")) + "; window " + str(trend_all.get("window")) + ")")
+    lines.append("- The table also lists pre-2000 retrospective registrations and future-dated planned trials; the trend excludes both.")
+    lines.append("")
+    lines.append("### Trend window sensitivity")
+    lines.append("")
+    table_rows = ["| window | IRR | 95% CI | p | n_years |", "| --- | --- | --- | --- | --- |"]
+    for _min_year, result in trend_windows:
+        if result.get("irr_per_year") is None:
+            continue
+        table_rows.append(
+            "| " + str(result.get("window")) + " | " + str(result["irr_per_year"]) + " | "
+            + str(result["ci_low"]) + "-" + str(result["ci_high"]) + " | "
+            + _fmt_p(result.get("p_value")) + " | " + str(result["n_years"]) + " |"
+        )
+    lines.extend(table_rows)
     lines.append("")
 
     lines.append("## Phase distribution")
@@ -93,8 +117,9 @@ def generate_insights(con: duckdb.DuckDBPyConnection, reports_dir) -> Path:
 
     lines.append("## Completion and stopping by sponsor class")
     lines.append("")
-    lines.append(_table(sponsors))
+    lines.append(_table(sponsor_display))
     lines.append("")
+    lines.append("- completion_ci_low / completion_ci_high are Wilson 95% intervals.")
     lines.append("- Chi-square test of completion rate across sponsor classes: chi2=" + str(chi.get("chi2")) + ", p=" + _fmt_p(chi.get("p_value")) + " (classes with n>=30: " + str(chi.get("n_classes")) + ")")
     lines.append("")
 
@@ -129,7 +154,8 @@ def generate_insights(con: duckdb.DuckDBPyConnection, reports_dir) -> Path:
     lines.append("- Trials come from five cardiometabolic queries; the warehouse deduplicates by NCT id.")
     lines.append("- Completion/stopping rates are descriptive; the chi-square test is a screening test, not a causal estimate (sponsor class is confounded with phase, size and disease area).")
     lines.append("- Enrollment medians exclude trials without a reported enrollment count; Kruskal-Wallis compares distributions, not per-phase means.")
-    lines.append("- The Poisson trend models yearly counts; interpretation assumes the query set is stable across years.")
+    lines.append("- The Poisson trend models yearly counts on completed registry years only (2000 to last complete year): pre-2000 retrospective registrations and future-dated planned trials are excluded; the window-sensitivity table shows the estimate is not an artefact of the window choice.")
+    lines.append("- The query set is a convenience sample of five cardiometabolic terms; trend interpretation assumes it stays stable across years.")
     lines.append("")
 
     path = reports_dir / "insights.md"

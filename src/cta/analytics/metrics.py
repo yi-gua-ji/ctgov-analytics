@@ -28,7 +28,7 @@ def overview(con: duckdb.DuckDBPyConnection) -> dict:
         "n_trials", "n_sponsor_classes", "first_start_year", "last_start_year",
         "completion_rate", "stopped_rate", "median_enrollment", "n_sglt2",
     ]
-    return dict(zip(keys, row))
+    return dict(zip(keys, row, strict=False))
 
 
 def trials_by_year(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:

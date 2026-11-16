@@ -27,6 +27,8 @@ Warehouse table: `stg_studies` (one row per NCT id; upserted on every run).
 | primary_outcome_first | VARCHAR | outcomesModule.primaryOutcomes[0].measure | |
 | has_results | BOOLEAN | study.hasResults | |
 
-Marts (views): `v_trials` adds `start_year`, `is_completed`, `is_stopped`, `is_sglt2`;
+Marts (views): `v_trials` adds `start_year`, `is_completed`, `is_stopped`,
+`is_sglt2` (matches the SGLT2 acronym and every gliflozin agent name:
+dapagliflozin, empagliflozin, canagliflozin, ertugliflozin, sotagliflozin);
 `v_trials_by_year`, `v_phase_distribution`, `v_completion_by_sponsor`,
 `v_enrollment_by_phase`, `v_top_conditions`, `v_sglt2_trend` are metric views.

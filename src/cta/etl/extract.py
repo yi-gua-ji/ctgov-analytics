@@ -120,7 +120,7 @@ def extract_rows(studies: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for study in studies:
         try:
             row = study_to_row(study)
-        except Exception:  # noqa: BLE001 - a malformed study must not drop the page
+        except Exception:
             continue
         if row.get("nct_id"):
             rows.append(row)

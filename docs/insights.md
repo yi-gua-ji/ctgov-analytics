@@ -1,6 +1,6 @@
 # ClinicalTrials.gov cardiometabolic trials - insights
 
-Generated: 2026-11-16 06:07 UTC
+Generated: 2026-11-16 07:14 UTC
 
 ## Headline numbers
 
@@ -8,7 +8,7 @@ Generated: 2026-11-16 06:07 UTC
 - Start years covered: 1965 - 2028
 - Completed share: 0.4945 | stopped share: 0.075
 - Median enrollment: 114.0 participants
-- SGLT2-related trials: 516
+- SGLT2-related trials: 589
 
 ## Trials per start year
 
@@ -60,7 +60,17 @@ Generated: 2026-11-16 06:07 UTC
 | 2027 | 42 |
 | 2028 | 2 |
 
-- Poisson trend of annual counts: IRR = 1.0831 per year (95% CI 1.0797-1.0864, p=<0.001)
+- Poisson trend of annual counts: IRR = 1.0922 per year (95% CI 1.0873-1.097, p=<0.001; window 2000-2025)
+- The table also lists pre-2000 retrospective registrations and future-dated planned trials; the trend excludes both.
+
+### Trend window sensitivity
+
+| window | IRR | 95% CI | p | n_years |
+| --- | --- | --- | --- | --- |
+| 2000-2025 | 1.0922 | 1.0873-1.097 | <0.001 | 26 |
+| 2005-2025 | 1.0755 | 1.0699-1.0812 | <0.001 | 21 |
+| 2010-2025 | 1.0698 | 1.0622-1.0775 | <0.001 | 16 |
+| 2015-2025 | 1.0786 | 1.0662-1.0912 | <0.001 | 11 |
 
 ## Phase distribution
 
@@ -77,17 +87,18 @@ Generated: 2026-11-16 06:07 UTC
 
 ## Completion and stopping by sponsor class
 
-| sponsor_class | n_trials | n_completed | completion_rate | n_stopped | stopped_rate |
-| --- | --- | --- | --- | --- | --- |
-| OTHER | 3739 | 1664.0 | 0.445 | 277.0 | 0.0741 |
-| INDUSTRY | 976 | 665.0 | 0.6814 | 81.0 | 0.083 |
-| OTHER_GOV | 134 | 49.0 | 0.3657 | 3.0 | 0.0224 |
-| NIH | 52 | 33.0 | 0.6346 | 8.0 | 0.1538 |
-| FED | 47 | 32.0 | 0.6809 | 3.0 | 0.0638 |
-| NETWORK | 21 | 13.0 | 0.619 | 1.0 | 0.0476 |
-| UNKNOWN | 1 | 1.0 | 1.0 | 0.0 | 0.0 |
-| INDIV | 1 | 1.0 | 1.0 | 0.0 | 0.0 |
+| sponsor_class | n_trials | n_completed | completion_rate | n_stopped | stopped_rate | ci_low | ci_high |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| OTHER | 3739 | 1664.0 | 0.445 | 277.0 | 0.0741 | 0.4292 | 0.461 |
+| INDUSTRY | 976 | 665.0 | 0.6814 | 81.0 | 0.083 | 0.6515 | 0.7098 |
+| OTHER_GOV | 134 | 49.0 | 0.3657 | 3.0 | 0.0224 | 0.2889 | 0.4499 |
+| NIH | 52 | 33.0 | 0.6346 | 8.0 | 0.1538 | 0.4987 | 0.752 |
+| FED | 47 | 32.0 | 0.6809 | 3.0 | 0.0638 | 0.5383 | 0.796 |
+| NETWORK | 21 | 13.0 | 0.619 | 1.0 | 0.0476 | 0.4088 | 0.7925 |
+| UNKNOWN | 1 | 1.0 | 1.0 | 0.0 | 0.0 | 0.2065 | 1.0 |
+| INDIV | 1 | 1.0 | 1.0 | 0.0 | 0.0 | 0.2065 | 1.0 |
 
+- completion_ci_low / completion_ci_high are Wilson 95% intervals.
 - Chi-square test of completion rate across sponsor classes: chi2=192.419, p=<0.001 (classes with n>=30: 5)
 
 ## Enrollment by phase
@@ -133,29 +144,29 @@ Generated: 2026-11-16 06:07 UTC
 | 2005 | 0 | 68 |
 | 2006 | 0 | 84 |
 | 2007 | 0 | 107 |
-| 2008 | 0 | 96 |
+| 2008 | 1 | 95 |
 | 2009 | 1 | 133 |
 | 2010 | 0 | 142 |
 | 2011 | 1 | 158 |
 | 2012 | 0 | 147 |
-| 2013 | 1 | 167 |
-| 2014 | 10 | 177 |
-| 2015 | 12 | 172 |
-| 2016 | 27 | 177 |
-| 2017 | 28 | 180 |
-| 2018 | 25 | 203 |
-| 2019 | 32 | 194 |
-| 2020 | 28 | 210 |
-| 2021 | 52 | 238 |
-| 2022 | 73 | 242 |
-| 2023 | 60 | 260 |
-| 2024 | 59 | 291 |
-| 2025 | 56 | 339 |
-| 2026 | 45 | 432 |
-| 2027 | 4 | 38 |
+| 2013 | 2 | 166 |
+| 2014 | 15 | 172 |
+| 2015 | 18 | 166 |
+| 2016 | 34 | 170 |
+| 2017 | 31 | 177 |
+| 2018 | 28 | 200 |
+| 2019 | 33 | 193 |
+| 2020 | 34 | 204 |
+| 2021 | 57 | 233 |
+| 2022 | 76 | 239 |
+| 2023 | 65 | 255 |
+| 2024 | 70 | 280 |
+| 2025 | 64 | 331 |
+| 2026 | 52 | 425 |
+| 2027 | 5 | 37 |
 | 2028 | 1 | 1 |
 
-- SGLT2 annual counts: IRR = 1.1481 per year (95% CI 1.1334-1.1631, p=<0.001)
+- SGLT2 annual counts: IRR = 1.236 per year (95% CI 1.2123-1.2601, p=<0.001)
 
 ## Top conditions
 
@@ -183,4 +194,5 @@ Generated: 2026-11-16 06:07 UTC
 - Trials come from five cardiometabolic queries; the warehouse deduplicates by NCT id.
 - Completion/stopping rates are descriptive; the chi-square test is a screening test, not a causal estimate (sponsor class is confounded with phase, size and disease area).
 - Enrollment medians exclude trials without a reported enrollment count; Kruskal-Wallis compares distributions, not per-phase means.
-- The Poisson trend models yearly counts; interpretation assumes the query set is stable across years.
+- The Poisson trend models yearly counts on completed registry years only (2000 to last complete year): pre-2000 retrospective registrations and future-dated planned trials are excluded; the window-sensitivity table shows the estimate is not an artefact of the window choice.
+- The query set is a convenience sample of five cardiometabolic terms; trend interpretation assumes it stays stable across years.

@@ -15,5 +15,7 @@ jobs:
           python-version: "3.12"
       - name: Install
         run: pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src tests scripts
       - name: Test
         run: pytest -q

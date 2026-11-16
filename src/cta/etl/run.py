@@ -8,7 +8,7 @@ import json
 import logging
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from ..config import Config, load_config
@@ -40,7 +40,7 @@ async def run_pipeline(
     queries = queries or cfg.ingest.queries
     strict = cfg.quality.strict if strict is None else strict
     client = client or CtgovClient(cfg)
-    started = datetime.now(timezone.utc)
+    started = datetime.now(UTC)
     run_id = started.strftime("%Y%m%dT%H%M%S")
 
     raw_dir = Path(cfg.paths.raw_dir)
@@ -110,7 +110,7 @@ async def run_pipeline(
 def main(argv: list[str] | None = None) -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    except Exception:  # noqa: BLE001
+    except Exception:
         pass
     parser = argparse.ArgumentParser(prog="cta-pipeline", description="ClinicalTrials.gov analytics pipeline")
     parser.add_argument("--config", default=None)

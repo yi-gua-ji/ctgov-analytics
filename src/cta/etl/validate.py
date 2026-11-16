@@ -51,7 +51,7 @@ def validate_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
     for row in rows:
         nct_id = str(row.get("nct_id") or "").strip()
         if not NCT_RE.match(nct_id):
-            add("nct_id_format", row, f"invalid nct_id: {row.get(chr(110)+chr(99)+chr(116)+chr(95)+chr(105)+chr(100))!r}")
+            add("nct_id_format", row, f"invalid nct_id: {row.get('nct_id')!r}")
         elif nct_id in seen:
             add("nct_id_duplicate", row, "duplicate nct_id in payload")
         else:
